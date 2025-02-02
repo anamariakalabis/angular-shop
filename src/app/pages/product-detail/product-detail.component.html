@@ -1,0 +1,8 @@
+<div class="container">
+    <div *ngIf="product">
+      <h2>{{ product.name }}</h2>
+      <img [src]="product.imageUrl" alt="{{ product.name }}" class="img-fluid">
+      <p>{{ product.price | currency }}</p>
+    </div>
+  </div>
+  

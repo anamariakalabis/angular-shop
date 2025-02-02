@@ -1,8 +1,13 @@
-<nav>
-  <a [routerLink]="['/']" routerLinkActive="active">Accueil</a> |
-  <a [routerLink]="['/about']" routerLinkActive="active">À propos</a>  
-</nav>
+<app-header></app-header>
 
+<section class="presentation">
+  <h2>Bienvenue chez "Au Petit Village"</h2>
+  <p>
+    Découvrez nos figurines artisanales inspirées de l'univers d'Astérix & Obélix !  
+    Chaque pièce est fabriquée avec passion pour raviver la nostalgie des aventures gauloises.
+  </p>
+</section>
 
-<!-- C'est ici que les composants seront affichés en fonction de la route -->
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>

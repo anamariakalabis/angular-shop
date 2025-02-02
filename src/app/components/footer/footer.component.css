@@ -1,0 +1,24 @@
+.footer {
+    background-color: #151217;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 3px solid #DA001E;
+  }
+  
+  .footer .socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer .socials img {
+    width: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .footer .socials img:hover {
+    transform: scale(1.2);
+  }
+  
