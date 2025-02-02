@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, Router } from '@angular/router'; // 🔥 Important pour le routing
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterModule, CommonModule], // Ajoute RouterModule ici !
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-shop';
+  constructor(private router: Router) {}
+
+  goToAbout() {
+    console.log('Navigation vers About');
+    this.router.navigate(['/about']);
+  }
 }
